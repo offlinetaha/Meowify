@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meowify</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="card">
+    <header class="header">
+      <div class="logo-wrap">
+        <img src="icons/icon-48.png" alt="Meowify Logo" class="logo-icon">
+        <div class="title-group">
+          <h1 class="title">Meowify Mode</h1>
+          <p class="subtitle">Turn the web into cats</p>
+        </div>
+      </div>
+      <span class="badge" id="cat-badge">🐾 Meow</span>
+    </header>
+
+    <main class="content">
+      <div class="toggle-section">
+        <div class="toggle-label-wrap">
+          <span class="toggle-title">Activate Meowify</span>
+          <span class="toggle-desc" id="toggle-desc">Replace images with cats</span>
+        </div>
+        <label class="switch" for="meow-toggle">
+          <input type="checkbox" id="meow-toggle" aria-label="Toggle Meowify Mode">
+          <span class="slider">
+            <span class="slider-paw">🐾</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="status-box" id="status-box">
+        <div class="status-indicator" id="status-dot"></div>
+        <span class="status-text" id="status-text">Ready to Meowify</span>
+      </div>
+
+      <div class="stats-row" id="stats-row">
+        <div class="stat-item">
+          <span class="stat-number" id="img-count">0</span>
+          <span class="stat-label">Cats placed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" id="active-state">Off</span>
+          <span class="stat-label">Status</span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-tip">💡 Tip: Toggle ON on any image-rich webpage!</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
